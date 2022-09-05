@@ -23,13 +23,13 @@
           </button>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a class="navigation__link">Главная</a>
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Фотографии</a>
+              <a class="navigation__link" href="users-photo.html">Фотографии</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="">Конкурс</a>
+              <a class="navigation__link" href="form.html">Конкурс</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">Html Academy></a>
@@ -40,9 +40,11 @@
     </header>
     <main class="inner">
       <section class="user-photo">
-        <h1 class="user-photo__title">Фотографии пользователей</h1>
-        <p class="user-photo__description">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</p>
+        <div class="user-photo__title-container title-container">
+          <h1 class="title-container__title">Фотографии пользователей</h1>
+          <p class="title-container__description">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?</p>
+        </div>
         <ul class="user-photo__list">
           <li class="user-photo__item">
             <article class="user-post">
@@ -157,12 +159,12 @@
             </article>
           </li>
         </ul>
-        <form action="" class="user-photo__form">
-          <p class="user-photo__slogan">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="user-photo__container">
-            <img class="user-photo__photo" width="280" height="374" src="" alt="Зимняя дорога">
+        <form action="" class="user-photo__upload-photo upload-photo">
+          <p class="upload-photo__slogan">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="upload-photo__container">
+            <img class="upload-photo__image" width="280" height="374" src="" alt="Зимняя дорога">
           </div>
-          <div class="user-photo__filter-tools filter-tools">
+          <div class="upload-photo__filter-tools filter-tools">
             <ul class="filter-tools__list">
               <li class="filter-tools__item">
                 <button class="filter-tools__tool filter-tools__tool--crop"></button>
@@ -180,6 +182,8 @@
               </div>
             </div>
           </div>
+          <button class="upload-photo__button form__button--primary">Запостить</button>
+          <button class="upload-photo__button form__button--secondary">Отмена</button>
         </form>
       </section>
     </main>
